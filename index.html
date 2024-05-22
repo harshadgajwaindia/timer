@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer</title>
+   <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class ="container">
+      <div id="box">
+        <div class="size">
+          <p id="time"></p>
+        </div>
+        <div class="buttons">
+          <button id = "start">start</button>
+          <button id="stop">stop</button>
+          <button id="reset">reset</button>
+          <button id="show">show</button>
+        </div>
+        
+      </div>
+    </div>
+    
+    <script>
+    let count=0;
+    let clear;
+const starttimer=()=>
+{
+  clear= setInterval(function() {
+   starttime.innerText=count++;
+  }, 1000);
+}
+const stoptimer=()=>
+{
+  clearInterval(clear);
+}
+const showtimer=()=>
+{
+  const para = document.createElement("p");
+  para.innerText=`Time showing: ${count-1} seconds`
+  document.body.appendChild(para)
+}
+const restimer=()=>
+{
+  count=0;
+  starttime.innerText=count;
+  clearInterval(clear);
+}
+
+      const starttime=document.getElementById("time")
+      const counting = document.getElementById("start")
+      const stoptime = document.getElementById("stop")
+      const showtime = document.getElementById("show")
+      const restime =document.getElementById("reset")
+      
+counting.addEventListener("click", starttimer);
+stoptime.addEventListener("click",stoptimer);
+showtime.addEventListener("click", showtimer);
+restime.addEventListener("click",restimer);
+
+</script>
+    
+ 
+  </body>
+</html>

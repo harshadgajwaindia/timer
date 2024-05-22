@@ -1,0 +1,59 @@
+#box
+{
+  
+  background-color: grey;
+  height: 200px;
+  width: 375px;
+  }
+#start
+{
+  background-color:black;
+  color: white;
+  position: relative;
+  top: 70px;
+  height: 30px;
+  width:60px;
+}
+#stop
+{
+  background-color:black;
+  color: white;
+position: relative;
+  top: 70px;
+  height: 30px;
+  width:60px;
+}
+#reset
+{
+  background-color:black;
+  color: white;
+position: relative;
+  top: 70px;
+  height: 30px;
+  width:60px;
+}
+#show
+{
+  background-color:black;
+  color: white;
+  position: relative;
+  top: 70px;
+  height: 30px;
+  width:60px;
+  
+}
+#time{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+.size
+{
+  height: 50px;
+  width: 100%;
+}
+.buttons
+{
+  position: relative;
+  left:50px;
+}
